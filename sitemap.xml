@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nextgenerationtour.es/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextgenerationtour.es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextgenerationtour.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nextgenerationtour.es/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextgenerationtour.es/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextgenerationtour.es/"/>
+  </url>
+  <url>
+    <loc>https://nextgenerationtour.es/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextgenerationtour.es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextgenerationtour.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nextgenerationtour.es/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextgenerationtour.es/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextgenerationtour.es/"/>
+  </url>
+  <url>
+    <loc>https://nextgenerationtour.es/de/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextgenerationtour.es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextgenerationtour.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nextgenerationtour.es/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextgenerationtour.es/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextgenerationtour.es/"/>
+  </url>
+  <url>
+    <loc>https://nextgenerationtour.es/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nextgenerationtour.es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nextgenerationtour.es/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nextgenerationtour.es/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nextgenerationtour.es/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nextgenerationtour.es/"/>
   </url>
 </urlset>
