@@ -730,6 +730,15 @@ footer{padding:28px 56px;display:flex;justify-content:space-between;align-items:
 .nav-lang:focus-visible,.mob-lang:focus-visible,.nav-link:focus-visible,.mob-link:focus-visible,.footer-link:focus-visible,.form-submit:focus-visible,.privacy-ack a:focus-visible,.privacy-ack input:focus-visible,.xp-nav:focus-visible{outline:2px solid #e3c58d;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+<style id="ngt-hero-mision-ajustes-20261115">
+/* Desplazamiento exclusivamente visual: el botón conserva su posición original. */
+.hero h1,
+.hero .hero-desc{position:relative;top:-20px}
+.hero .btn-main{border-radius:14px}
+/* Segunda línea simétrica para el encabezado de misión. */
+.mision-eyebrow::after{content:'';width:28px;height:1px;background:rgba(197,170,120,0.75);flex-shrink:0}
+@media(max-width:767px){.hero h1,.hero .hero-desc{top:-12px}}
+</style>
 </head>
 <body>
 <nav>
