@@ -713,6 +713,23 @@ footer{padding:28px 56px;display:flex;justify-content:space-between;align-items:
   .hero-desc span,.hero-desc strong{font-size:clamp(12px,3.3vw,14px)!important}
 }
 </style>
+<style id="ngt-ajustes-tecnicos-20261115">
+.ngt-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.nav-lang,.mob-lang{background:transparent;border:0;font-family:inherit;line-height:inherit;appearance:none}
+.nav-link{color:rgba(232,226,217,.70)}
+.nav-lang:not(.on),.mob-lang:not(.on){color:rgba(197,170,120,.82)}
+.footer-link{color:rgba(232,226,217,.72)}
+.footer-link:hover{color:#c5aa78}
+.form-field label{color:rgba(197,170,120,.90);font-size:10px}
+.form-field input::placeholder,.form-field textarea::placeholder{color:rgba(232,226,217,.62)}
+.form-field input,.form-field select,.form-field textarea{color:rgba(232,226,217,.9)}
+.privacy-ack{display:flex;align-items:flex-start;gap:11px;margin:20px 0 25px;font:300 12px/1.7 'Jost',sans-serif;color:#c2bbae}
+.privacy-ack input{flex:0 0 auto;width:17px;height:17px;accent-color:#c5aa78;margin-top:2px;cursor:pointer}
+.privacy-ack a,.form-msg a{color:#e3c58d;text-decoration:underline;text-underline-offset:3px}
+.form-msg[data-state="error"]{color:#e9b6a6}
+.nav-lang:focus-visible,.mob-lang:focus-visible,.nav-link:focus-visible,.mob-link:focus-visible,.footer-link:focus-visible,.form-submit:focus-visible,.privacy-ack a:focus-visible,.privacy-ack input:focus-visible,.xp-nav:focus-visible{outline:2px solid #e3c58d;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 <nav>
@@ -727,13 +744,13 @@ footer{padding:28px 56px;display:flex;justify-content:space-between;align-items:
 </div>
 <div class="nav-right">
 <div class="nav-langs">
-<span class="nav-lang on" onclick="setLang('es')">ES</span>
+<button type="button" class="nav-lang on" onclick="setLang('es')" aria-label="Espagnol" aria-current="page">ES</button>
 <span class="nav-sep">·</span>
-<span class="nav-lang" onclick="setLang('en')">EN</span>
+<button type="button" class="nav-lang" onclick="setLang('en')" aria-label="Anglais">EN</button>
 <span class="nav-sep">·</span>
-<span class="nav-lang" onclick="setLang('de')">DE</span>
+<button type="button" class="nav-lang" onclick="setLang('de')" aria-label="Allemand">DE</button>
 <span class="nav-sep">·</span>
-<span class="nav-lang" onclick="setLang('fr')">FR</span>
+<button type="button" class="nav-lang" onclick="setLang('fr')" aria-label="Français">FR</button>
 </div>
 <a class="nav-reserve" data-i18n="nav_reservar" href="#contact">Réserver</a>
 </div>
@@ -751,13 +768,13 @@ footer{padding:28px 56px;display:flex;justify-content:space-between;align-items:
 <div class="mob-divider"></div>
 <a class="mob-reserve" data-i18n="nav_reservar" href="#contact" onclick="closeMenu()">Réserver</a>
 <div class="mob-langs">
-<span class="mob-lang on" onclick="setLang('es');closeMenu()">ES</span>
+<button type="button" class="mob-lang on" onclick="setLang('es');closeMenu()" aria-label="Espagnol" aria-current="page">ES</button>
 <span class="mob-sep">·</span>
-<span class="mob-lang" onclick="setLang('en');closeMenu()">EN</span>
+<button type="button" class="mob-lang" onclick="setLang('en');closeMenu()" aria-label="Anglais">EN</button>
 <span class="mob-sep">·</span>
-<span class="mob-lang" onclick="setLang('de');closeMenu()">DE</span>
+<button type="button" class="mob-lang" onclick="setLang('de');closeMenu()" aria-label="Allemand">DE</button>
 <span class="mob-sep">·</span>
-<span class="mob-lang" onclick="setLang('fr');closeMenu()">FR</span>
+<button type="button" class="mob-lang" onclick="setLang('fr');closeMenu()" aria-label="Français">FR</button>
 </div>
 </div>
 <!-- ══ HERO ══ -->
@@ -806,7 +823,7 @@ footer{padding:28px 56px;display:flex;justify-content:space-between;align-items:
 </div>
 <div class="steps">
 <div class="step step--select">
-<div class="step-img-wrap"><img alt="Choisissez votre expérience" src="../assets/elige-tu-experiencia.webp"/></div>
+<div class="step-img-wrap"><img loading="lazy" decoding="async" alt="Choisissez votre expérience" src="../assets/elige-tu-experiencia.webp"/></div>
 <div class="step-body">
 <div class="step-num" data-i18n="paso_01">01</div>
 <div class="step-title" data-i18n="paso1_titulo">Choisissez votre expérience</div>
@@ -814,7 +831,7 @@ footer{padding:28px 56px;display:flex;justify-content:space-between;align-items:
 </div>
 </div>
 <div class="step step--wear">
-<div class="step-img-wrap"><img alt="Mettez les lunettes" src="../assets/ponte-las-gafas.webp"/></div>
+<div class="step-img-wrap"><img loading="lazy" decoding="async" alt="Mettez les lunettes" src="../assets/ponte-las-gafas.webp"/></div>
 <div class="step-body">
 <div class="step-num" data-i18n="paso_02">02</div>
 <div class="step-title" data-i18n="paso2_titulo">Mettez le casque</div>
@@ -822,7 +839,7 @@ footer{padding:28px 56px;display:flex;justify-content:space-between;align-items:
 </div>
 </div>
 <div class="step">
-<div class="step-img-wrap"><img alt="Commencez l’expérience" src="../assets/inicia-la-experiencia.webp"/></div>
+<div class="step-img-wrap"><img loading="lazy" decoding="async" alt="Commencez l’expérience" src="../assets/inicia-la-experiencia.webp"/></div>
 <div class="step-body">
 <div class="step-num" data-i18n="paso_03">03</div>
 <div class="step-title" data-i18n="paso3_titulo">Lancez l'expérience</div>
@@ -913,40 +930,45 @@ footer{padding:28px 56px;display:flex;justify-content:space-between;align-items:
 </div>
 <div class="contact-right">
 <div class="form-note" data-i18n="form_nota">Envoyer une demande privée</div>
-<form id="ngt-form" onsubmit="enviarFormulario(event)">
+<form id="ngt-form" action="https://formsubmit.co/info@nextgenerationtour.es" method="POST" onsubmit="enviarFormulario(event)">
+<input type="hidden" name="_subject" value="NGT - Nueva consulta desde la web"/>
+<input type="hidden" name="_template" value="table"/>
+<input type="hidden" name="_url" value="https://nextgenerationtour.es/fr/"/>
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="ngt-honeypot"/>
 <div class="form-field">
-<label data-i18n="form_nombre">Nom</label>
-<input autocomplete="name" id="f-nombre" placeholder="Tu nombre completo" required="" type="text"/>
+<label for="f-nombre" data-i18n="form_nombre">Nom</label>
+<input name="nombre" autocomplete="name" id="f-nombre" placeholder="Tu nombre completo" required="" type="text"/>
 </div>
 <div class="form-field">
-<label>Email</label>
-<input autocomplete="email" id="f-email" placeholder="tu@email.com" required="" type="email"/>
+<label for="f-email">Email</label>
+<input name="email" autocomplete="email" id="f-email" placeholder="tu@email.com" required="" type="email"/>
 </div>
 <div class="form-field">
-<label data-i18n="form_tipo">Type de demande</label>
-<select id="f-exp">
+<label for="f-exp" data-i18n="form_tipo">Type de demande</label>
+<select name="tipo" id="f-exp">
 <option data-i18n="opt_particular">Expérience individuelle</option>
 <option data-i18n="opt_empresa">Proposition pour entreprise / espace</option>
 <option data-i18n="opt_info">Informations générales</option>
 </select>
 </div>
 <div class="form-field">
-<label data-i18n="form_mensaje">Message</label>
-<textarea id="f-msg" placeholder="Cuéntanos tu proyecto, grupo, espacio o cualquier pregunta..."></textarea>
+<label for="f-msg" data-i18n="form_mensaje">Message</label>
+<textarea name="mensaje" id="f-msg" placeholder="Cuéntanos tu proyecto, grupo, espacio o cualquier pregunta..."></textarea>
 </div>
+<div class="privacy-ack"><input type="checkbox" id="f-privacy" required/><label for="f-privacy">J’ai lu la <a href="/fr/privacidad/">politique de confidentialité</a>.</label></div>
 <button class="form-submit" data-i18n="form_enviar" type="submit">Envoyer →</button>
-<div class="form-msg" data-i18n="form_ok" id="form-confirm">Demande envoyée avec succès !</div>
+<div class="form-msg" data-i18n="form_ok" id="form-confirm" role="status" aria-live="polite">Demande envoyée avec succès !</div>
 </form>
 </div>
 </section>
 <section class="ngt-explora" aria-label="Découvrir NGT"><div class="ngt-explora-wrap"><p class="ngt-explora-kicker">NOTRE MÉTIER</p><h2>Découvrir NGT</h2><p class="ngt-explora-lead">NGT — Next Generation Tour porte le tourisme au niveau supérieur grâce à la réalité mixte qui amplifie les lieux réels. Nous créons de nouvelles façons de découvrir les destinations, musées et espaces culturels, ainsi que des expériences exclusives pour les entreprises.</p><nav class="ngt-explora-links" aria-label="Découvrir NGT"><a href="/fr/sobre-ngt/">À propos de NGT ↗</a><a href="/fr/museos/">Musées ↗</a><a href="/fr/turismo-cultural/">Tourisme culturel ↗</a><a href="/fr/patrimonio/">Patrimoine historique ↗</a><a href="/fr/educacion/">Éducation ↗</a></nav></div></section>
 <footer>
 <div class="footer-logo"><img alt="Next Generation Tour" src="../assets/LogoWeb.png"/></div>
-<div class="footer-copy">© 2025 NGT · Todos los derechos reservados</div>
+<div class="footer-copy">© 2026 NGT · Todos los derechos reservados</div>
 <div class="footer-links">
-<a class="footer-link" data-i18n="footer_privacidad" href="#">Confidentialité</a>
-<a class="footer-link" data-i18n="footer_terminos" href="#">CGU</a>
-<a class="footer-link" data-i18n="footer_cookies" href="#">Cookies</a>
+<a class="footer-link" data-i18n="footer_privacidad" href="/fr/privacidad/">Confidentialité</a>
+<a class="footer-link" data-i18n="footer_terminos" href="/fr/terminos/">CGU</a>
+<a class="footer-link" data-i18n="footer_cookies" href="/fr/cookies/">Cookies</a>
 </div>
 </footer>
 <script>
@@ -1148,17 +1170,29 @@ async function enviarFormulario(e){
   e.preventDefault();
   var form=document.getElementById('ngt-form'),c=document.getElementById('form-confirm'),btn=form.querySelector('.form-submit');
   var lang=document.documentElement.lang||'es',t=T[lang]||T.es;
-  var payload={nombre:document.getElementById('f-nombre').value.trim(),email:document.getElementById('f-email').value.trim(),tipo:document.getElementById('f-exp').value,mensaje:document.getElementById('f-msg').value.trim()};
-  c.style.display='none';btn.disabled=true;
+  if(!form.reportValidity())return;
+  if(form.elements._honey&&form.elements._honey.value.trim())return;
+  var payload={
+    nombre:document.getElementById('f-nombre').value.trim(),
+    email:document.getElementById('f-email').value.trim(),
+    tipo:document.getElementById('f-exp').value,
+    mensaje:document.getElementById('f-msg').value.trim(),
+    _subject:'NGT - Consulta desde nextgenerationtour.es',
+    _template:'table',_url:location.origin+location.pathname
+  };
+  c.style.display='none';c.dataset.state='';btn.disabled=true;
   try{
-    var res=await fetch('contact.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    var res=await fetch('https://formsubmit.co/ajax/info@nextgenerationtour.es',{
+      method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)
+    });
     var data=await res.json();
-    if(!res.ok||!data.ok)throw new Error(data.error||'Error');
-    c.textContent=t.form_ok||'¡Consulta enviada!';
-    c.style.display='block';form.reset();
+    if(!res.ok||!(data.success===true||data.success==='true'))throw new Error('No enviado');
+    c.textContent=t.form_ok||'Consulta enviada';
+    c.dataset.state='success';c.style.display='block';form.reset();
   }catch(err){
-    c.textContent=t.form_error||'No se pudo enviar.';
-    c.style.display='block';
+    c.textContent="L’envoi a échoué. Vous pouvez nous écrire à"+' ';
+    var a=document.createElement('a');a.href='mailto:info@nextgenerationtour.es';a.textContent='info@nextgenerationtour.es';
+    c.appendChild(a);c.dataset.state='error';c.style.display='block';
   }finally{btn.disabled=false;}
 }
 
